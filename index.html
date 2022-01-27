@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <script defer src="counter.js"></script>
+
+    
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+      body {
+        text-align: center;
+        font-family: Open Sans, sans-serif;
+      }
+      button {
+        width: 250px;
+        font-size: 2.5em;
+        padding: 25px;
+        margin: 25px;
+        font-weight: bold;
+        background-color: rgb(104, 70, 104);
+        color: white;
+        border-radius: 10%;
+      }
+
+      #count {
+        font-size: 10em;
+        color: black;
+      }
+      input {   
+        margin-bottom: 15px;
+      }
+      .container {
+        width: 90vw;
+        margin: 0 auto;
+        background-color: rgb(202, 162, 202);
+        border-radius: 50%;
+        padding: 30px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button id="plus">Plus</button>
+      <button id="minus">Minus</button>
+      <div id="count">0</div> 
+      <div>
+        <input type="number" name="maxUser" id="maxUser" placeholder="Enter Max Number">
+        <input type="button" value="send" id='sendMax'>
+      </div>
+      <div>
+        <input type="number" name="minUser" id="minUser" placeholder="Enter Min Number">
+        <input type="button" value="send" id='sendMin'>
+      </div>
+      <button id="reset">Reset</button>
+    </div>
+  </body>
+</html>
